@@ -1,8 +1,8 @@
 
 <%= form_for @task do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_area :title, rows:"5", cols:"60" %>
   <%= f.label :details %>
-  <%= f.text_field :details %>
+  <%= f.text_area :details, rows:"5", cols:"60" %>
   <%= f.submit %>
 <% end %>
