@@ -6,7 +6,7 @@
  <% else %>
  <input type='checkbox' >
  <% end %>
-<%= link_to task.title, task_path(task) %>
+  <%= link_to task.title, task_path(task) %><%= link_to image_tag("delete.png", size:"12x15"), task_path(task), method: :delete, data: {confirm: "Delete #{task.title}?"} %>
 </li>
 <% end %>
 </ul>
